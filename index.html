@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Game</title>
+
+<script src="tone.js" defer ></script>
+<script src="audio.js" defer ></script>
+
+<!-- Yandex Games SDK -->
+<script src="/sdk.js"></script>
+ <script>
+        YaGames
+    .init()
+    .then(ysdk => {
+        console.log('Yandex SDK initialized');
+        window.ysdk = ysdk;
+    });
+</script>
+</head>
+<body>
+<button onclick="player.start();">Play</button>
+<div>Play test</div>
+
+</body>
+
+</html>
